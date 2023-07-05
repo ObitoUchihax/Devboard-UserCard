@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /*100vh = 100% des Viewports und somit 1% von dem was dem User angezeigt wird*/
+    height: 100vh;
+    display: flex;
+    /*Bewegt das Item auf der y-Achse mittig*/
+    align-items: center;
+    /*Bewegt das Item auf der X-Achse mittig*/
+    justify-content: center;
+    background-color: #f4f4f4;
+
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 25px;
+
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    
+    /*Rundung*/
+    border-radius: 50%;
+
+    /*Für den Rahmen*/
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-image {
+    /*Ohne height und width wird die Änderung der Größe nicht aktiv*/
+    height: 100%;
+    width: 100%;
+
+    /*Bild in cover modus bringen und abrunden*/
+    object-fit: cover;
+    border-radius: 50%;
+
+    /*Innere Umrandung*/
+    border: 3px solid #fff;
+}
+
+.text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.job {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.media-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    margin: 0 8px;
+    width: 34px;
+    font-size: 2rem;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    text-decoration: none;
+    color: white;
+}
+
